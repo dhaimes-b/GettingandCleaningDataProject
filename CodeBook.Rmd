@@ -1,0 +1,46 @@
+---
+title: "Code_Book.rmd"
+author: "Dave Haimes"
+date: "10/4/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+--- 
+
+Code book:
+Steps taken
+1. Download the dataset
+2. Assign data to variables (subject_test,subject_train,test_data_x, etc.)
+3. Merge subject,x,y sets by training or test dataset
+4. Merge training and test dataset
+5. Clean up the labeling of variables to make them more user-friendly. Changes activity number labels to meaningful activity labels
+6. Summarize the data, extracting mean and st. deviation for each measurement into a new dataset
+7. Write out the summarized data to tidy_data.txt
+
+Measurements:
+FFT - the measurement is in the frequency domain (Fourier transform)
+Time - the measurement is in the time domain
+Expanded:
+Acc into Accelerometer
+Gyro into Gyroscope
+
+Activities:
+1	WALKING
+2	WALKING_UPSTAIRS
+3	WALKING_DOWNSTAIRS
+4	SITTING
+5	STANDING
+6	LAYING
+
+
+README
+Peer-graded Assignment: Getting and Cleaning Data Course Project
+
+Dataset
+Human Activity Recognition Using Smartphones
+
+
